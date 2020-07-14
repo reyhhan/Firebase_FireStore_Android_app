@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="107dp"
+        android:layout_height="105dp"
+        app:srcCompat="@drawable/choco" />
+
+    <TextView
+        android:id="@+id/item_ava"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"
+        android:text="Availability"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="204dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="120dp"
+        android:text="item"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="80dp"
+        android:textSize="16dp"
+        android:text="Price"
+        android:textColor="@android:color/black"/>
+</RelativeLayout>

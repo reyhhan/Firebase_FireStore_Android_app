@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Order"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Product :"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="No.of Pcs :"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:text="Total :"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:text="Place Order"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/sp_pro"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:focusable="false"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/sp_pcs"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:text="Add"
+        android:id="@+id/btn_add"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp" />
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="200dp" />
+</RelativeLayout>
+
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "140866076392",
+    "firebase_url": "https://bakery-cff39.firebaseio.com",
+    "project_id": "bakery-cff39",
+    "storage_bucket": "bakery-cff39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140866076392:android:fec003b829daf404",
+        "android_client_info": {
+          "package_name": "com.example.bakery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140866076392-egn1121hd1re9d53oek6dtg0464mb61f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6dj65OJJxEdD1cmUwrTle7-Oprx_N0MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140866076392-egn1121hd1re9d53oek6dtg0464mb61f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

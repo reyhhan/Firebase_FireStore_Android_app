@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:text="Welcome to My Bakery"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="319dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bakery_icon">
+
+    </ImageView>
+
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="172dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txt_pwd"
+        android:layout_width="275dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="231dp"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="LOGIN" />
+
+    <ProgressBar
+        android:id="@+id/prg_bar"
+        android:visibility="invisible"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="82dp" />
+
+    <TextView
+        android:layout_width="262dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="25dp"
+        android:text="Do not have an account?" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="283dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="410dp"
+        android:background="@color/colorPrimary"
+        android:text="Register" />
+
+
+
+</RelativeLayout>
