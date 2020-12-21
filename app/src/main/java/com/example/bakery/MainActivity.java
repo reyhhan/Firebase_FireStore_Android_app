@@ -65,78 +65,27 @@ FirebaseFirestore db;
                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                if(task.isSuccessful()){
                                    for(QueryDocumentSnapshot doc : task.getResult()){
+                                       String a=doc.getString("Email");
+                                       String b=doc.getString("Password");
                                        String a1=email.getText().toString().trim();
                                        String b1=pwd.getText().toString().trim();
-                                       if(email.getText().toString().equalsIgnoreCase(a1) & pwd.getText().toString().equalsIgnoreCase(b1)) {
+                                       if(a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)) {
                                            Intent home = new Intent(MainActivity.this, home_activity.class);
                                            startActivity(home);
                                            Toast.makeText(MainActivity.this, "Logged In", Toast.LENGTH_SHORT).show();
                                            break;
                                        }else
                                            Toast.makeText(MainActivity.this, "Cannot login,incorrect Email and Password", Toast.LENGTH_SHORT).show();
-
                                    }
-
                                }
                            }
                        });
-
-
                 break;
-
             case R.id.btn_register:
                 Intent register_view=new Intent(MainActivity.this,Register.class);
                 startActivity(register_view);
                 break;
         }
     }
-
-     /*public void onClick(View v){
-        switch(v.getId()){
-            case R.id.btn_login:
-                progress.setVisibility(View.VISIBLE);
-                 DocumentReference contact=db.collection("customer").document("UQmwwNVKRHyBToy6jEzB");
-                 contact.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                     @Override
-                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                         if(task.isSuccessful()) {
-                             DocumentSnapshot doc = task.getResult();
-                             String a=doc.getString("Email");
-                             String b=doc.getString("Password");
-                             String a1=email.getText().toString().trim();
-                             String b1=pwd.getText().toString().trim();
-                             if(a.equalsIgnoreCase(a1) & b.equalsIgnoreCase(b1)){
-                                 new Thread(new Runnable() {
-                                     @Override
-                                     public void run() {
-                                         for(int i=0;i<100;i++) {
-                                             progress.setProgress(i);
-                                             try {
-                                                 Thread.sleep(100);
-                                             }catch (InterruptedException e){
-                                                 e.printStackTrace();
-                                             }
-                                         }
-                                         Intent home=new Intent(MainActivity.this,home_activity.class);
-                                         startActivity(home);
-                                     }
-                                 }).start();
-
-
-                             }else{
-                                 Toast.makeText(MainActivity.this, "invalid login", Toast.LENGTH_SHORT).show();
-                             }
-                         }
-                     }
-                 });
-
-                break;
-            case R.id.btn_register:
-                Intent register_view=new Intent(MainActivity.this,Register.class);
-                startActivity(register_view);
-                break;
-        }
-    }*/
-
 }
 //<a rel="nofollow" href="https://vecteezy.com">Vector Graphics by vecteezy.com</a>
